@@ -1,0 +1,190 @@
+:root {
+    /* Primary Colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral Colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For Mobile */
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background: url("../images/pattern-background-mobile.svg") no-repeat;
+    background-color: var(--pale-blue);
+    background-size: cover;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--desaturated-blue);
+}
+
+.order-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 20px 15px hsla(245, 75%, 52%, 0.15);
+}
+
+.content {
+    padding: 0 1.5rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.order-text {
+    padding: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+}
+
+.plan-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-icon {
+    padding-right: 1rem;
+}
+
+.plan-text h4 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-bottom: 0.125rem;
+}
+
+.change-link a {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.change-link a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.btns {
+    margin: 1.5rem 0;
+}
+
+.btn {
+    display: block;
+    padding: 0.875rem;
+    font-size: 0.9375rem;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pay-btn {
+    margin-bottom: 1rem;
+    background-color: var(--bright-blue);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.pay-btn:hover {
+    opacity: 0.75;
+    box-shadow: 0px 20px 15px hsla(245, 75%, 52%, 0.15);
+}
+
+.cancel-btn {
+    color: var(--desaturated-blue);
+}
+
+.cancel-btn:hover {
+    color: var(--dark-blue);
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* For Desktop */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background: url("../images/pattern-background-desktop.svg") no-repeat;
+        background-color: var(--pale-blue);
+        background-size: cover;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    .order-container {
+        width: 450px;
+    }
+
+    .content{
+        padding: 0 3rem;
+    }
+
+    .hero-image img {
+        margin-bottom: 1.5rem;
+    }
+
+    .order-text h1{
+        font-size: 1.75rem;
+    }
+
+    .price-section {
+        padding: 1.5rem;
+    }
+
+    .plan-icon {
+        padding-right: 1.25rem;
+    }
+
+    .btns {
+        margin: 2rem 0;
+    }
+}
