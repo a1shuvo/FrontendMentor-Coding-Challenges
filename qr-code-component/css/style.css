@@ -1,0 +1,74 @@
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For Mobile */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: var(--light-gray);
+}
+
+.qr-container {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wrapper {
+    margin: 1rem;
+}
+
+.wrapper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.text-content h1 {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.text-content p {
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+/* Frontend Mentor Atribution CSS */
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
