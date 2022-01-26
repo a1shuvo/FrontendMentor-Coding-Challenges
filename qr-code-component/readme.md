@@ -2,9 +2,9 @@
 
 ## Desktop Design
 
-![Desktop Design](./qr-code-component/design/desktop-design.jpg "Desktop design")
+![Desktop Design](./design/desktop-design.jpg "Desktop design")
 
 
 ## Mobile Design
 
-![Mobile Design](./qr-code-component/design/mobile-design.jpg "Mobile design")
+![Mobile Design](./design/mobile-design.jpg "Mobile design")
