@@ -1,0 +1,170 @@
+:root {
+
+    /* Primary Colors */
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral Colors */
+
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For Mobile */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-main-bg);
+    height: 150vh;
+}
+
+p {
+    font-size: 18px;
+    color: var(--soft-blue);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.card-container {
+    width: 340px;
+    background-color: var(--very-dark-blue-card-bg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.card-wrapper {
+    padding: 24px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 99%;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--cyan);
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-container svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: visibility 0.2s ease-in-out;
+}
+
+.image-container:hover .overlay {
+    opacity: 50%;
+}
+
+.image-container:hover svg {
+    visibility: visible;
+}
+
+.content h2 {
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.content h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+
+.balance-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+}
+
+.balance svg {
+    margin-right: 0.5rem;
+}
+
+.balance h4 {
+    color: var(--cyan);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time svg {
+    margin-right: 0.5rem;
+}
+
+.credit-section {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.credit-section img {
+    width: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.credit-section a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.credit-section a:hover {
+    color: var(--cyan);
+}
+
+/* Frontend Mentor Atribution CSS */
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.attribution a {
+    color: var(--cyan)
+}
