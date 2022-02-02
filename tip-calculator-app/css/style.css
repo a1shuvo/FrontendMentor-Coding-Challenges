@@ -1,0 +1,220 @@
+:root {
+    /* Primary Color */
+
+    --strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral Color */
+
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --very-dark-grayish-cyan: hsl(186, 14%, 43%);
+    --dark-grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: var(--light-grayish-cyan);
+}
+
+.logo {
+    text-align: center;
+    margin-top: 1.7rem;
+    margin-bottom: 2.3rem;
+}
+
+.tip-calculator {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-position: 17px 15px;
+    background-repeat: no-repeat;
+    background-color: var(--very-light-grayish-cyan);
+    padding: 5px;
+    padding-right: 18px;
+    margin: 5px 0 2rem 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--very-dark-cyan);
+    border-radius: 5px;
+    text-align: right;
+}
+
+input:focus {
+    border: 2px solid var(--strong-cyan);
+}
+
+input::placeholder {
+    color: var(--very-dark-cyan);
+}
+
+.bill-input {
+    background-image: url(../images/icon-dollar.svg);
+}
+
+.tip-custom input {
+    margin: auto;
+}
+
+label {
+    color: var(--very-dark-grayish-cyan);
+    font-weight: 700;
+}
+
+.tip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.tips {
+    background: var(--very-dark-cyan);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.active {
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.people {
+    margin-top: 2rem;
+}
+
+.people-input {
+    background-image: url(../images/icon-person.svg);
+}
+
+.error {
+    color: red;
+    position: absolute;
+    right: 0;
+    padding-right: 2rem;
+    display: none;
+}
+
+.output-section {
+    background: var(--very-dark-cyan);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.text {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.person {
+    color: var(--dark-grayish-cyan);
+    font-size: 14px;
+}
+
+.total-tip {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.amount {
+    color: var(--strong-cyan);
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.reset button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.reset button:hover{
+    background-color: var(--light-grayish-cyan);
+}
+
+.attribution {
+    margin-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tip-calculator {
+        width: 990px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-section {
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .tip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .people-input {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .output-section {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .reset {
+        margin-top: 150px;
+    }
+}

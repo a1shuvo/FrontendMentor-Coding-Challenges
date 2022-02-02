@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+
+    <div class="tip-calculator">
+      <div class="input-section">
+        <label for="bill">Bill</label>
+        <br />
+        <input class="bill-input" type="number" id="bill" name="bill" />
+        <label for="select-tip">Select Tip %</label>
+        <div class="tip">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10">10%</div>
+          <div class="tips tip-15 active">15%</div>
+          <div class="tips tip-25">25%</div>
+          <div class="tips tip-50">50%</div>
+          <div class="tip-custom">
+            <input type="number" placeholder="Custom" />
+          </div>
+        </div>
+
+        <div class="people">
+          <label for="people">Number of People</label>
+          <label for="" class="error">Can't be Zero</label>
+          <input class="people-input" type="number" />
+        </div>
+      </div>
+
+      <div class="output-section">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip-amount">$4.27</div>
+        </div>
+        <div class="total-tip">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="total-tip">$32.79</div>
+        </div>
+
+        <div class="reset">
+          <button>Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Shuvo Saha</a>.
+    </div>
+  </body>
+</html>
